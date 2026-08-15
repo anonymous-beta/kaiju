@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "kaiju": {
+      "command": "kaiju",
+      "args": ["run"],
+      "env": {}
+    }
+  }
+}
