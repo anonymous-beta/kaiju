@@ -1,21 +1,43 @@
-# 🦖 KAIJU — The Monster MCP Server
+<p align="center">
+  <img src="assets/kaiju-logo.png" alt="KAIJU — The Monster MCP Server" width="480"/>
+</p>
 
-```
+<h1 align="center">🦖 KAIJU — The Monster MCP Server</h1>
+
+<p align="center">
+  <b>The standalone, AI-powered MCP server for Linux pentesting.</b><br/>
+  Recon · Scanning · Web attacks · Exploit checks · Payload library · AI brain<br/>
+  Wrapped in a beautiful terminal UI with signature timestamps.
+</p>
+
+<p align="center">
+  <a href="#-installation"><img src="https://img.shields.io/badge/INSTALL-SETUP-ff0033?style=for-the-badge"/></a>
+  <a href="#-the-arsenal"><img src="https://img.shields.io/badge/ARSENAL-25%20TOOLS-00ccff?style=for-the-badge"/></a>
+  <a href="#-ai-configuration"><img src="https://img.shields.io/badge/AI-PASTE%20%26%20GO-ffcc00?style=for-the-badge"/></a>
+  <a href="#-license"><img src="https://img.shields.io/badge/LICENSE-MIT-00cc66?style=for-the-badge"/></a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/version-1.0.0-red?style=flat-square"/>
+  <img src="https://img.shields.io/badge/python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/platform-Linux%20%28Kali%2FParrot%2FUbuntu%29-000000?style=flat-square&logo=linux"/>
+  <img src="https://img.shields.io/badge/created%20by-Anonymous--beta-ffcc00?style=flat-square"/>
+</p>
+
+<pre align="center">
 ██╗  ██╗ █████╗ ██╗     ██╗██╗   ██╗
 ██║ ██╔╝██╔══██╗██║     ██║██║   ██║
 █████╔╝ ███████║██║     ██║██║   ██║
 ██╔═██╗ ██╔══██║██║     ██║██║   ██║
 ██║  ██╗██║  ██║███████╗██║╚██████╔╝
 ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝ ╚═════╝
-```
+</pre>
 
-**KAIJU** — the standalone, AI-powered MCP server for Linux pentesting. Recon, scanning, web attacks, exploit checks, a built-in payload library, and an AI brain — all wrapped in a beautiful terminal UI with signature timestamps. Created by **Anonymous-beta**.
+<p align="center"><i>“Kaiju awakens. Target acquired.”</i> — <b>Anonymous-beta</b></p>
 
-> *"Kaiju awakens. Target acquired."*
+<hr/>
 
----
-
-## ⚡ Why KAIJU?
+## 🥊 Why KAIJU
 
 | Feature | KAIJU | Typical MCP server |
 |---|---|---|
@@ -30,18 +52,27 @@
 | Interactive terminal cockpit (TUI) | ✅ **exclusive** | ❌ |
 | One-command install + config at `~/.config/kaiju` | ✅ | ❌ |
 
-We can't always be the fastest — so KAIJU ships with things **nobody else has**: the payload library as a tool, the embedded AI brain, the paste-and-go wizard, and the cockpit.
+> <b>“If we can't make it better than the others, we make it have something the others don't have.”</b>
+>
+> KAIJU ships four things nobody else does: the **payload library as a tool**, the **embedded AI brain**, the **paste-and-go wizard**, and the **cockpit**.
 
----
+<hr/>
 
 ## 🚀 Installation
 
-### Requirements
-- Linux (Kali / Parrot / Ubuntu / Debian recommended)
-- Python **3.10+**
-- (Optional but recommended) `nmap`, `traceroute`
+<details open>
+<summary><b>🐧 Requirements</b></summary>
 
-### Install from source
+| Requirement | Notes |
+|---|---|
+| Linux | Kali / Parrot / Ubuntu / Debian recommended |
+| Python | **3.10+** |
+| `nmap`, `traceroute` | optional but recommended (`apt install nmap traceroute`) |
+
+</details>
+
+<details>
+<summary><b>📦 Install from source</b></summary>
 
 ```bash
 git clone https://github.com/Anonymous-beta/kaiju.git
@@ -51,7 +82,10 @@ pip install -e .
 kaiju banner
 ```
 
-### Zero-install launcher
+</details>
+
+<details>
+<summary><b>⚡ Zero-install launcher</b></summary>
 
 ```bash
 pip install -r requirements.txt
@@ -59,7 +93,10 @@ python3 run.py            # splash + help
 python3 run.py run        # fire up the MCP server
 ```
 
-### Quick sanity check
+</details>
+
+<details>
+<summary><b>✅ Quick sanity check</b></summary>
 
 ```bash
 kaiju banner              # the beast wakes up
@@ -68,7 +105,9 @@ kaiju config --ai         # paste your AI API key
 kaiju run                 # start the MCP server (stdio)
 ```
 
----
+</details>
+
+<hr/>
 
 ## 🎯 Quick Start
 
@@ -83,7 +122,7 @@ kaiju run
 kaiju tui
 ```
 
----
+<hr/>
 
 ## 🤖 AI Configuration — paste & go
 
@@ -92,8 +131,6 @@ kaiju config --ai
 ```
 
 The wizard asks for a **provider**, you **paste your API key**, it **tests the connection**, and done. KAIJU connects instantly.
-
-**Supported out of the box:**
 
 | Provider | Endpoint | Default model |
 |---|---|---|
@@ -105,13 +142,14 @@ The wizard asks for a **provider**, you **paste your API key**, it **tests the c
 | Ollama (local) | `localhost:11434/v1` | `llama3.1` |
 | Custom | any OpenAI-compatible URL | anything |
 
-> Local Ollama with no key works too — KAIJU is fully offline-capable.
+> 💡 Local Ollama with no key works too — KAIJU is fully offline-capable.
 
----
+<hr/>
 
 ## 🔌 Connecting MCP Clients
 
-### Claude Desktop
+<details>
+<summary><b>💬 Claude Desktop</b></summary>
 
 Edit `~/.config/Claude/claude_desktop_config.json`:
 
@@ -126,7 +164,10 @@ Edit `~/.config/Claude/claude_desktop_config.json`:
 }
 ```
 
-### Cursor / IDE agents
+</details>
+
+<details>
+<summary><b>🧑‍💻 Cursor / IDE agents</b></summary>
 
 ```json
 {
@@ -139,17 +180,36 @@ Edit `~/.config/Claude/claude_desktop_config.json`:
 }
 ```
 
-### Custom client over SSE
+</details>
+
+<details>
+<summary><b>🌐 Custom client over SSE</b></summary>
 
 ```bash
 kaiju run --transport sse --host 127.0.0.1 --port 8765
 ```
 
-Then point your client at `http://127.0.0.1:8765/sse`.
+```python
+# examples/kaiju_sse_client.py
+import asyncio
+from mcp import ClientSession
+from mcp.client.sse import sse_client
 
----
+async def main():
+    async with sse_client("http://127.0.0.1:8765/sse") as (read, write):
+        async with ClientSession(read, write) as session:
+            await session.initialize()
+            tools = await session.list_tools()
+            print(f"⚡ KAIJU connected — {len(tools.tools)} tools armed")
 
-## 🛠️ The Arsenal
+asyncio.run(main())
+```
+
+</details>
+
+<hr/>
+
+## 🛠️ The Arsenal — 25 tools
 
 ### `recon` — know your enemy
 | Tool | What it does |
@@ -200,7 +260,7 @@ Then point your client at `http://127.0.0.1:8765/sse`.
 |---|---|
 | `ai_analyze` | paste tool output → AI explains findings + next attack steps |
 
----
+<hr/>
 
 ## 💣 The Payload Library
 
@@ -211,7 +271,7 @@ sqli, xss, lfi, rce, ssrf, idor, auth, headers,
 deserialization, upload, crypto, misc
 ```
 
-Example (as an MCP call):
+Example MCP call:
 
 ```
 payload_library("ssrf")
@@ -228,13 +288,13 @@ payload_library("ssrf")
   ...
 ```
 
----
+<hr/>
 
 ## 🛡️ Safe Mode
 
 KAIJU ships with `safe_mode: true`:
 
-- `command_exec` only runs **allowlisted binaries** (`nmap`, `curl`, `dig`, …)
+- `command_exec` only runs **allowlisted binaries** (`nmap`, `curl`, `dig`, …) — no shell metacharacters, no `rm`, `mkfs`, `dd`, etc.
 - interpreted shells (`bash -c`, `python3 -c`) are blocked
 - `file_read` / `file_write` restricted to the working tree
 - exploit checks are **non-invasive probes** (single benign request)
@@ -245,61 +305,68 @@ Run KAIJU on a box you own and disable it when you're ready to go full monster:
 kaiju config --set 'safe_mode false'
 ```
 
----
+<hr/>
 
 ## 🕹️ CLI Reference
 
-```bash
-kaiju                      # splash + help
-kaiju run                  # MCP server (stdio)
-kaiju run --transport sse --host 127.0.0.1 --port 8765
-kaiju config --ai          # paste-and-go AI wizard
-kaiju config --show        # dump config JSON
-kaiju config --set 'ai.model gpt-4o'
-kaiju config --reset
-kaiju tools                # arsenal table
-kaiju ai "how do I test for SSRF here?"
-kaiju tui                  # interactive cockpit
-kaiju banner
-kaiju --version
-```
+| Command | What it does |
+|---|---|
+| `kaiju` | splash + help |
+| `kaiju run` | MCP server (stdio) |
+| `kaiju run --transport sse --host 127.0.0.1 --port 8765` | MCP server (SSE) |
+| `kaiju config --ai` | paste-and-go AI wizard |
+| `kaiju config --show` | dump config JSON |
+| `kaiju config --set 'ai.model gpt-4o'` | set any value |
+| `kaiju config --reset` | factory reset |
+| `kaiju tools` | arsenal table |
+| `kaiju ai "how do I test for SSRF here?"` | ask the AI brain |
+| `kaiju tui` | interactive cockpit |
+| `kaiju banner` | print the banner |
+| `kaiju --version` | version |
 
----
+<hr/>
 
 ## 🗂️ Project Structure
 
-```
+<details>
+<summary><b>Click to expand</b></summary>
+
+```text
 kaiju/
 ├── run.py                     # zero-install launcher
 ├── setup.py / pyproject.toml  # packaging
-├── kaiju/
-│   ├── banner.py              # the Kaiju splash
-│   ├── timestamps.py          # signature timestamps
-│   ├── config.py              # XDG config + providers
-│   ├── ai.py                  # OpenAI-compatible AI client
-│   ├── server.py              # MCP server core
-│   ├── cli.py                 # CLI entry
-│   ├── tools/                 # the arsenal
-│   │   ├── recon.py  network.py  web.py  exploit.py  system.py
-│   └── ui/tui.py              # interactive cockpit
+├── assets/kaiju-logo.png      # the logo
+├── examples/                  # client configs + SSE demo
+└── kaiju/
+    ├── banner.py              # the Kaiju splash
+    ├── timestamps.py          # signature timestamps
+    ├── config.py              # XDG config + providers
+    ├── ai.py                  # OpenAI-compatible AI client
+    ├── server.py              # MCP server core
+    ├── cli.py                 # CLI entry
+    ├── tools/                 # the arsenal
+    │   ├── recon.py  network.py  web.py  exploit.py  system.py
+    └── ui/tui.py              # interactive cockpit
 ```
 
----
+</details>
+
+<hr/>
+
+## 🗺️ Roadmap
+
+- [ ] More payloads (every category, 500+)
+- [ ] Metasploit bridge
+- [ ] Session / report export (JSON, HTML, markdown)
+- [ ] Windows client (cockpit only)
+- [ ] Plugin system
+
+<hr/>
 
 ## 📜 License
 
 MIT — Copyright © 2026 **Anonymous-beta**.
 
----
-
-## 🙏 The Vow
-
-> *"If we can't make it better than the others, we make it have something the others don't have."*
-
-KAIJU has four things nobody else ships:
-1. **The payload library as an MCP tool**
-2. **The embedded AI brain** (`ai_analyze`)
-3. **The paste-and-go AI wizard**
-4. **The terminal cockpit**
-
-Now go wake the Kaiju. 🦖
+<p align="center">
+  <i>“Ndi Igbo kwenu”</i> 🦖
+</p>
