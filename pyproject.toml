@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kaiju-mcp"
+version = "1.0.0"
+description = "KAIJU — the monster MCP server for Linux pentesting. Recon, exploitation, automation, AI-powered."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Anonymous-beta" }]
+keywords = ["mcp", "pentest", "security", "recon", "exploit", "ai"]
+dependencies = [
+    "mcp>=1.2.0",
+    "rich>=13.7.0",
+    "questionary>=2.0.0",
+    "requests>=2.31.0",
+    "pyfiglet>=1.0.3",
+    "colorama>=0.4.6",
+    "dnspython>=2.4.0",
+    "python-nmap>=0.7.1",
+    "python-whois>=0.8.0",
+    "beautifulsoup4>=4.12.0",
+]
+
+[project.scripts]
+kaiju = "kaiju.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["kaiju*"]
