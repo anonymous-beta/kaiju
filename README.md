@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/kaiju-logo.png" alt="KAIJU — The Monster MCP Server" width="480"/>
+  <img src="image-4.jpg" alt="KAIJU — The Monster MCP Server" width="480"/>
 </p>
 
 <h1 align="center">🦖 KAIJU — The Monster MCP Server</h1>
