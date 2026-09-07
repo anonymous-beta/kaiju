@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="image-4.jpg" alt="KAIJU — The Monster MCP Server" width="480"/>
+  <img src="kaiju.svg" alt="KAIJU — The Monster MCP Server" width="480"/>
 </p>
 
-<h1 align="center">🦖 KAIJU — The Monster MCP Server</h1>
+<h1 align="center"> KAIJU — The Monster MCP Server</h1>
 
 <p align="center">
   <b>The standalone, AI-powered MCP server for Linux pentesting.</b><br/>
